@@ -1,0 +1,84 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(254, 248, 255)
+}
+*{box-sizing: border-box;}
+h1{
+    text-align: center;
+    margin: 5%;
+}
+.container{
+    margin-top: 2% ;
+    width: 100%;
+    padding:5% 0;
+    position: relative;  
+}
+.container > div{
+    /* width: 30%;
+    margin: 1% 1%; */
+    background-color: rgba(255, 235, 205, 0.652);
+    border:1px solid black;
+    float: left;
+    position: relative;   
+}
+.container span{
+    float: left;
+    padding:  2%;
+    font-size: 15px;
+    color: rgb(56, 56, 56);
+}
+
+.clearfix{
+    clear: left;
+}
+.title{
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    color: black;
+    width: 25%;
+    height: auto;
+    padding: 0.3% 0;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    font-size: large;
+}
+/* #div1{
+    margin-left:2.9%;
+} */
+#chicken{background-color: rgb(255, 243, 192);}
+#beef{background-color:rgb(244, 202, 255);}
+#sushi{background-color: rgb(255, 215, 215);}
+
+/********desktop******/
+@media (min-width:992px)
+{
+    .container > div{
+        width: 30%;
+        margin: 1% 1%;
+    }
+    #div1{
+        margin-left:2.9%;
+    }
+} 
+
+/*********tablet*******/
+@media (min-width:768px) and (max-width:991.5px){
+    #div1 , #div2{
+        width: 47%;
+        margin-left:2%;
+    }
+    #div3{
+        width: 96%;
+        margin-top:2%;
+        margin-left:2%
+    }  
+}
+
+/*********mobile*******/
+@media (max-width:767.5px){
+    #div1 , #div2 , #div3{
+        width: 80%;
+        margin-left:10%;
+        margin-bottom:5%   
+    }
